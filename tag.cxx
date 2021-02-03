@@ -12,6 +12,7 @@ int main() {
     std::fclose(file);
 
     std::sprintf(cmd, "git tag r%d", cnt);
+    std::printf("cmd: %s\n", cmd);
     std::system(cmd);
     return 0;
 }
